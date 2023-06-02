@@ -32,6 +32,7 @@ Swagger Ui 주소 : http://localhost:8080/swagger-ui.html
 
 위 요구 사항을 해결 하기 위해서는 AWS에서는 아래와 같은 서비스들을 제공 하고 있습니다.
 - EC2
+-- dd
 - ELB
 - AutoScailing Group
 - Code Pipe Line
