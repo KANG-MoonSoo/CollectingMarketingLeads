@@ -18,7 +18,7 @@ Swagger Ui 주소 : http://localhost:8080/swagger-ui.html
 
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src = "https://img.shields.io/badge/spring data JPA-6DB33F?style=for-the-badge&logo=spring data JPA&logoColor=white">
 
-##수평 확장 인프라 설계
+## 수평 확장 인프라 설계
 수평 확장 인프라의 핵심은 트래픽이 변화 할 때 마다 인프라의 크기를 변화 시키는 것입니다. 
 
 이를 위해 다음과 같은 사항들이 요구 됩니다.
