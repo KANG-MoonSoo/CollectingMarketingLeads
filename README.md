@@ -18,3 +18,22 @@ Swagger Ui 주소 : http://localhost:8080/swagger-ui.html
 
 <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/Spring Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white"> <img src = "https://img.shields.io/badge/spring data JPA-6DB33F?style=for-the-badge&logo=spring data JPA&logoColor=white">
 
+##수평 확장 인프라 설계
+수평 확장 인프라의 핵심은 트래픽이 변화 할 때 마다 인프라의 크기를 변화 시키는 것입니다. 
+
+이를 위해 다음과 같은 사항들이 요구 됩니다.
+- 기본적으로 애플리케이션을 구동할 수 있는 컴퓨팅 리소스 필요.
+- 트래픽에 따라서 컴퓨팅 리소스의 가로 확장(인스턴스 대수 증가)을 담당.
+- 늘어난 컴퓨팅 리소스에 대해서 요청을 분산 시킬 수 있는 로드 밸런싱
+
+그리고 컴퓨팅 리소스가 수시로 변경되는 상황 속에서, 애플리케이션이 수정 되었을때, 이미 확장된 시스템에 수동으로 일일히 반영 할 수는 없기 때문에,
+애플리케이션이 패치가 이루어질 경우, 확장된 인프라에 자동으로 애플리케이션 변경점을 전달 할 수 있어야 합니다.
+- 지속적 전달
+
+위 요구 사항을 해결 하기 위해서는 AWS에서는 아래와 같은 서비스들을 제공 하고 있습니다.
+- EC2
+- ELB
+- AutoScailing Group
+- Code Pipe Line
+###
+
