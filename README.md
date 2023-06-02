@@ -37,7 +37,7 @@ Swagger Ui 주소 : http://localhost:8080/swagger-ui.html
 - ELB(Elastic Load Balancer)
   - 인바운드 트래픽을 여러 EC2 인스턴스로 분산시켜 로드 밸런싱을 수행합니다.
   - 수평 확장된 인스턴스들 사이에서 트래픽을 공평하게 분배하여 성능과 가용성을 향상시킵니다.
-- AutoScailing Group
+- Auto Scaling Group
   - 트래픽 변동에 따라 EC2 인스턴스의 수를 동적으로 조절하여 수평 확장을 구현합니다.
   - 인스턴스의 수를 자동으로 늘리거나 줄여서 애플리케이션의 성능과 가용성을 유지합니다.
 - Code Pipe Line
